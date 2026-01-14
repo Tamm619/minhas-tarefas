@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
 import * as enums from '../../utils/enums/Tarefa'
+import { BotaoSalvar } from '../../styles'
 
 type TagProps = {
   prioridade?: enums.Prioridade
@@ -74,10 +75,6 @@ export const Botao = styled.button`
   background-color: #2f3640;
   border-radius: 8px;
   margin-right: 8px;
-`
-
-export const BotaoSalvar = styled(Botao)`
-  background-color: ${variaveis.verde};
 `
 
 export const BotaoCancelarRemover = styled(Botao)`
